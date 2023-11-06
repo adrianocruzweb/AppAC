@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App PWA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>LANÇAMENTO ÁGUA DE COCO - DMC</h1>
+
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <p>Núcleo:</p>
+            <label class="choice"><input type="radio" name="q1" value="SÃO JOAQUIM"> <span class="subitem">SÃO JOAQUIM</span></label><br>
+            <label class="choice"><input type="radio" name="q1" value="LUZ DE MARIA"> <span class="subitem">LUZ DE MARIA</span></label><br>
+            <label class="choice"><input type="radio" name="q1" value="SENHORA SANTANA"> <span class="subitem">SENHORA SANTANA</span></label><br>
+            <label class="choice"><input type="radio" name="q1" value="MESTRE ELIAS"> <span class="subitem">MESTRE ELIAS</span></label><br>
+            <label class="choice"><input type="radio" name="q1" value="outros"> <span class="subitem">Outros:</span></label>
+            <input type="text" id="outros" placeholder="Digite aqui" disabled>
+
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <p>Nome e Telefone:</p>
+            <div class="name-phone-row">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="telefone" placeholder="Telefone" disabled>
+                <button id="updatePhone">Atualizar</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <p>Valor:</p>
+            <input type="text" id="valor" placeholder="Valor R$"><br><br>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <p>Data:</p>
+            <input type="date" id="data" placeholder="dd/mm/yyyy"><br><br>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+            <p><span class="subitem">Situação:</span></p>
+            <label class="choice"><input type="radio" name="q5" value="Pago"> <span class="subitem">Pago</span></label><br>
+            <label class="choice"><input type="radio" name="q5" value="Á receber"> <span class="subitem">Á receber</span></label><br><br>
+        </div>
+
+        <button id="submit">Enviar</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
